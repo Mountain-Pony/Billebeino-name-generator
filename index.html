@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <title>Billebeino -nimigeneraattori</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Billebeino -nimigeneraattori</h1>
+        <h3>Selvitä oma billebeinonimesi!</h3>
+        <form enctype="application/x-www-form-urlencoded">    
+            <table>
+                <tr>
+                    <td align="left">Etunimi:</td>
+                    <td align="left"><input type="text" minlength="1" maxlength="25" id="firstName"></td>
+                    <td align="right"><div id="firstNameError"></div></td>
+                </tr>
+                <tr>
+                    <td align="left">Sukunimi:</td>
+                    <td align="left"><input type="text" minlength="1" maxlength="25" id="familyName"></td>
+                    <td align="right"><div id="familyNameError"></div></td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td align="left">Ruutu:</td>
+                    <td align="left"><input type="checkbox" id="formation" onclick="tarkistaValinta()"></td>
+                    <td class="text" align="left">
+                        (<a href="ohje.html">Mikä tämä on?</a>)
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td align="left"><button type="button" class="execute" onclick="execute()">Billebeinota nimesi</button></td>
+                </tr>
+            </table>
+            <br>    
+            <table>
+                <tr>
+                    <td align="left"><div class="bbName" id="bbName"></div></td>
+                    <td align="left"><div class="bbName" id="bbSmiley"></div></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<script src="resources/js/bbnamegenerator.js"></script>
+</html>

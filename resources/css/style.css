@@ -1,0 +1,21 @@
+* {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.bbName {
+    font-size: xx-large;
+}
+
+.execute {
+    font-size: medium;
+}
+
+.text {
+    text-align: justify;
+    max-width: 400px;
+}
